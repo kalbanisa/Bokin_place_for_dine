@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+     
+
+}
+section {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+section .img{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background:url(pic_trulli.jpg); 
+    background-position: center;
+    background-size: cover;
+}
+section .contentbox{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%;
+    margin-left: 90px;
+}
+section .contentbox .form h2 {
+    color: #dae1e3;
+    font-family: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 30px;
+     
+}
+ 
+.inputBx {
+    margin-bottom: 30px;
+    
+}
+.input-group{
+    position: relative;
+    
+}
+
+.input-group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color:  burlywood;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-group input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 10px;
+    background:transparent;
+    border: 1px solid burlywood;
+    border-top:0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    border-radius: 5px;
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+top: 0;
+font-size: 12px;
+}
+
+.inputaBx{
+    margin-bottom: 30px;   
+}
+ 
+.Bx{
+    border: 2px solid #0b0a0a;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #dae1e3;
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+  } 
+  .select .Bx {
+    outline: none;
+    border: none;
+    text-decoration: none; 
+    /*color: blue;*/
+     
+  }
+
+.inputBx input[type="submit"]{
+    background-color: rgb(186, 153, 91);
+    color: rgb(239, 230, 230);
+    outline: 0;
+    border: 0;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+} 
+.Dinnig{
+    display: flex;
+}
+.Dinnig button{
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 5px ;
+}
+.Dinnig .active{
+    width: 80px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    color:black;
+    background: #c19F31;
+}
+.Dinnig .active span{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(81, 77, 77);
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+.inputBx p{
+    color: moccasin;
+     
+}
+.inputBx label{
+    color:floralwhite;
+    text-align: center;
+}
+ /*Responsive*/
+ @media(max-width:768px) {
+    section .img {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+
+    }
+    section .contentbox .form h2{
+        margin-bottom: 0px;
+    }
+    section .contentbox {
+        width: 100%;
+        z-index: 1;
+    }
+    .inputBx p{
+        color: black;
+    }
+    .Bx{
+        color: black;
+    }
+    section .contentbox .form {
+        width: 100u;
+        background-color: rgba(255, 255, 255/0.9) padding 48px;
+    }
+}
